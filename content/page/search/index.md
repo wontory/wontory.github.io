@@ -1,5 +1,5 @@
 ---
-title: "Search"
+title: "검색"
 slug: "search"
 layout: "search"
 outputs:
