@@ -2,6 +2,7 @@
 title: 프로필
 description: Hugo, the world's fastest framework for building websites
 date: '2022-07-29'
+slug: 'profile'
 aliases:
   - about-us
   - about-hugo
