@@ -9,6 +9,7 @@ aliases:
   - contact
 license: CC BY-NC-ND
 lastmod: '2022-07-30'
+toc: false
 menu:
     main: 
         weight: -90
