@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on Wontory</title><link>https://wontory.github.io/page/</link><description>Recent content in Pages on Wontory</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 29 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://wontory.github.io/page/index.xml" rel="self" type="application/rss+xml"/><item><title>아카이브</title><link>https://wontory.github.io/archives/</link><pubDate>Fri, 29 Jul 2022 00:00:00 +0000</pubDate><guid>https://wontory.github.io/archives/</guid><description/></item><item><title>프로필</title><link>https://wontory.github.io/profile/</link><pubDate>Fri, 29 Jul 2022 00:00:00 +0000</pubDate><guid>https://wontory.github.io/profile/</guid><description>&lt;p>저는 초등학생 시절 컴퓨터실을 다니며 MS Office를 배웠습니다. 그 과정에서 컴퓨터와 소프트웨어에 흥미를 느꼈고, 이런 프로그램들은 어떻게 만드는 것인지 찾아보기 시작했습니다. 비주얼베이직, 게임메이커, 아두이노 등의 활동을 통해 꿈을 키워갔으며 현재는 경기대학교 컴퓨터공학부에 입학하여 전문적인 지식을 쌓고 있습니다. 저의 관심분야는 Front-End, UI/UX이며 현재 React를 공부하고 있습니다.&lt;/p>
-&lt;p>학력:&lt;/p>
+&lt;h4 id="학력">학력&lt;/h4>
 &lt;ul>
 &lt;li>경기대학교 컴퓨터공학부 2학년 재학 (2019.03.04 ~ )&lt;/li>
 &lt;/ul>
-&lt;p>경력:
-*&lt;/p>
-&lt;p>수상:
-*&lt;/p>
-&lt;p>기술스택:&lt;/p>
+&lt;h4 id="경력">경력&lt;/h4>
+&lt;ul>
+&lt;li>&lt;/li>
+&lt;/ul>
+&lt;h4 id="수상">수상&lt;/h4>
+&lt;ul>
+&lt;li>&lt;/li>
+&lt;/ul>
+&lt;h4 id="기술스택">기술스택&lt;/h4>
 &lt;ul>
 &lt;li>C&lt;/li>
 &lt;li>Python&lt;/li>
@@ -15,10 +19,10 @@
 &lt;li>HTML/CSS&lt;/li>
 &lt;li>JavaScript&lt;/li>
 &lt;/ul>
-&lt;p>미술과 음악을 사랑하며 예술이 그 페이지에 잘 융합되어있는 UI 디자인을 추구합니다. 그렇다고 보기에만 좋은 디자인은 하지 않습니다. 사용자에게 편리함과 재미, 새로움 등 최상의 경험을 줄 수 있는 UX를 설계합니다.&lt;/p>
+&lt;p>미술과 음악을 사랑하며 그 가치가 잘 융합된 UI 디자인을 추구합니다. 그렇다고 보기에만 좋은 디자인은 하지 않습니다. 사용자에게 편리함과 재미, 새로움 등 최상의 경험을 줄 수 있는 UX를 설계합니다.&lt;/p>
 &lt;p>웹 표준과 클린코드를 추구합니다.&lt;/p>
 &lt;p>프론트엔드에서 경쟁력은 얼마나 언어 또는 프레임워크를 잘 이해하고 있는가, 얼마나 API를 잘 활용하는가, 웹 성능을 얼마만큼 끌어올릴 수 있는가 등에서 나온다고 생각합니다. &amp;ldquo;제대로 하는 프론트엔드 개발자&amp;quot;가 되기 위해 끊임없이 학습하고 노력하겠습니다.&lt;/p>
-&lt;p>Learn more and contribute on &lt;a class="link" href="https://github.com/wontory" target="_blank" rel="noopener"
+&lt;p>Learn more on &lt;a class="link" href="https://github.com/wontory" target="_blank" rel="noopener"
 >GitHub&lt;/a>.&lt;/p></description></item><item><title>검색</title><link>https://wontory.github.io/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wontory.github.io/search/</guid><description/></item><item><title>링크</title><link>https://wontory.github.io/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wontory.github.io/links/</guid><description>&lt;p>To use this feature, add &lt;code>links&lt;/code> section to frontmatter.&lt;/p>
 &lt;p>This page&amp;rsquo;s frontmatter:&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
