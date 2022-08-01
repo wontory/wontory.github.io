@@ -1,8 +1,8 @@
 +++
-author = "Hugo Authors"
-title = "Markdown Syntax Guide"
-date = "2022-07-29"
-description = "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
+author = "Wontory"
+title = "마크다운 문법 정리 (Markdown Syntax)"
+date = "2022-08-01"
+description = "마크다운, 서식이 있는 문서를 작성하는 쉽고 편리한 언어"
 tags = [
     "markdown",
     "css",
@@ -10,106 +10,223 @@ tags = [
     "themes",
 ]
 categories = [
-    "themes",
+    "language", 
     "syntax",
 ]
 series = ["Themes Guide"]
-aliases = ["migrate-from-jekyl"]
-image = "pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg"
+image = "markdown_banner.png"
 +++
 
-This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
+본 문서는 Hugo와 Github Pages 포스팅을 위한 마크다운 문법을 서술합니다.  
+또한 Stack 테마에서 기본 HTML 요소가 CSS로 스타일이 정의되어 있는지도 표시합니다.
 <!--more-->
 
-## Headings
+&nbsp;  
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
+## 제목
 
-# H1
-## H2
-### H3
-#### H4
-##### H5
-###### H6
+다음의 HTML `<h1>`---`<h6>` 태그는 6가지 수준의 섹션 제목을 나타냅니다.  
+`<h1>`부터 `<h6>`까지 순서대로 높은 섹션 수준을 갖습니다.  
+제목 앞 # 기호의 개수로 섹션 수준을 구분합니다.
 
-## Paragraph
+# 제목1
+## 제목2
+### 제목3
+#### 제목4
+##### 제목5
+###### 제목6
 
-Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
+**\[ Code \]**
 
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
+```markdown
+# 제목1
+## 제목2
+### 제목3
+#### 제목4
+##### 제목5
+###### 제목6
+```
 
-## Blockquotes
+&nbsp;  
 
-The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
+## 문단
 
-#### Blockquote without attribution
+문단을 구분할 때는 두 문단 사이에 빈 줄을 추가합니다.
 
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.
-> **Note** that you can use *Markdown syntax* within a blockquote.
+#### 문단 예시
 
-#### Blockquote with attribution
+계절이 지나가는 하늘에는 가을로 가득 차 있습니다.  
+나는 아무 걱정도 없이 가을 속의 별들을 다 헤일 듯합니다.  
+가슴 속에 하나 둘 새겨지는 별을 이제 다 못 헤는 것은  
+쉬이 아침이 오는 까닭이요, 내일 밤이 남은 까닭이요,  
+아직 나의 청춘이 다하지 않은 까닭입니다.  
 
-> Don't communicate by sharing memory, share memory by communicating.<br>
-> — <cite>Rob Pike[^1]</cite>
+별 하나에 추억과 별 하나에 사랑과  
+별 하나에 쓸쓸함과 별 하나에 동경과  
+별 하나에 시와 별 하나에 어머니, 어머니
 
-[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
+**\[ Code \]**
 
-## Tables
+```markdown
+계절이 지나가는 하늘에는 가을로 가득 차 있습니다.  
+나는 아무 걱정도 없이 가을 속의 별들을 다 헤일 듯합니다.  
+가슴 속에 하나 둘 새겨지는 별을 이제 다 못 헤는 것은  
+쉬이 아침이 오는 까닭이요, 내일 밤이 남은 까닭이요,  
+아직 나의 청춘이 다하지 않은 까닭입니다.  
 
-Tables aren't part of the core Markdown spec, but Hugo supports supports them out-of-the-box.
+별 하나에 추억과 별 하나에 사랑과  
+별 하나에 쓸쓸함과 별 하나에 동경과  
+별 하나에 시와 별 하나에 어머니, 어머니
+```
 
-   Name | Age
---------|------
-    Bob | 27
-  Alice | 23
+&nbsp;  
 
-#### Inline Markdown within tables
+## 인용문
 
-| Italics   | Bold     | Code   |
-| --------  | -------- | ------ |
-| *italics* | **bold** | `code` |
+`<blockquote>` 요소는 안쪽의 텍스트가 긴 인용문임을 나타내며, 일반적으로 들여쓰기가 적용됩니다.  
+`<footer>`나 `<cite>` 요소를 인용문에 선택적으로 적용할 수 있고, 주석이나 약어를 포함할 수 있습니다.
 
-| A                                                        | B                                                                                                             | C                                                                                                                                    | D                                                 | E                                                          | F                                                                    |
-|----------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|------------------------------------------------------------|----------------------------------------------------------------------|
-| Lorem ipsum dolor sit amet, consectetur adipiscing elit. | Phasellus ultricies, sapien non euismod aliquam, dui ligula tincidunt odio, at accumsan nulla sapien eget ex. | Proin eleifend dictum ipsum, non euismod ipsum pulvinar et. Vivamus sollicitudin, quam in pulvinar aliquam, metus elit pretium purus | Proin sit amet velit nec enim imperdiet vehicula. | Ut bibendum vestibulum quam, eu egestas turpis gravida nec | Sed scelerisque nec turpis vel viverra. Vivamus vitae pretium sapien |
+#### 인용문 예시
 
-## Code Blocks
+> **단순함**은 *복잡함*보다 더 어렵다.  
+> 생각을 명확히 하고 단순하게 만들려면 열심히 노력해야 한다.  
+> 생각을 단순하게 만들 수 있는 단계에 도달하면 산도 움직일 수 있다.
+> --- <cite>스티브 잡스[^1]</cite>
 
-#### Code block with backticks
+[^1]: 故 스티브 잡스, Business Week(1998)
+
+**\[ Code \]**
+
+```markdown
+> **단순함**은 *복잡함*보다 더 어렵다. 
+> 생각을 명확히 하고 단순하게 만들려면 열심히 노력해야 한다.  
+> 생각을 단순하게 만들 수 있는 단계에 도달하면 산도 움직일 수 있다.
+> --- <cite>스티브 잡스[^1]</cite>
+
+[^1]: 故 스티브 잡스, Business Week(1998)
+```
+
+&nbsp;  
+
+## 표
+
+표는 마크다운에서 제공하는 핵심 기능은 아니지만, Hugo에서 지원합니다.  
+인용문과 마찬가지로, 표 내에서 마크다운 문법을 사용할 수 있습니다.  
+`|` 기호로 행을 구분하고 `-` 기호로 열을 구분합니다.  
+이 때, `-` 기호는 3개 이상 사용해야 합니다.
+
+#### 표 예시
+
+| 이름 | 나이 |
+| --- | --- |
+| Wontory | 23 |
+| 네이버 | 24 |
+| 카카오 | 13 |
+
+**\[ Code \]**
+
+```markdown
+| 이름 | 나이 |
+| --- | --- |
+| Wontory | 23 |
+| 네이버 | 24 |
+| 카카오 | 13 |
+```
+
+#### 표 내 마크다운 예시
+
+| Italic | Bold | Code |
+| --- | --- | --- |
+| *italic* | **bold** | `code` |
+
+**\[ Code \]**
+
+```markdown
+| Italic | Bold | Code |
+| --- | --- | --- |
+| *italic* | **bold** | `code` |
+```
+
+&nbsp;  
+
+## 코드 블럭
+
+#### \` 기호(Backtick)를 사용한 코드 블럭 예시
+
+코드를 \` 기호 3개로 감싸고 언어를 지정해주면 코드 블럭이 활성화됩니다. 
 
 ```html
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="utf-8">
-  <title>Example HTML5 Document</title>
+  <title>HTML5 코드 예시</title>
 </head>
 <body>
-  <p>Test</p>
+  <p>예시</p>
 </body>
 </html>
 ```
 
-#### Code block indented with four spaces
+**\[ Code \]**
+
+{{< highlight markdown >}}
+```html
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>HTML5 코드 예시</title>
+</head>
+<body>
+  <p>예시</p>
+</body>
+</html>
+```
+{{< /highlight >}}
+
+#### 들여쓰기를 이용한 코드 블럭 예시
+
+4칸 이상 들여쓰기를 하여 코드 블럭을 적용할 수 있습니다.  
+강조와 줄 번호가 표시되지 않는 특징이 있습니다.
 
     <!doctype html>
-    <html lang="en">
+    <html lang="ko">
     <head>
       <meta charset="utf-8">
-      <title>Example HTML5 Document</title>
+      <title>HTML5 코드 예시</title>
     </head>
     <body>
-      <p>Test</p>
+      <p>예시</p>
     </body>
     </html>
 
-#### Code block with Hugo's internal highlight shortcode
+**\[ Code \]**
+
+{{< highlight markdown >}}
+    <!doctype html>
+    <html lang="ko">
+    <head>
+      <meta charset="utf-8">
+      <title>HTML5 코드 예시</title>
+    </head>
+    <body>
+      <p>예시</p>
+    </body>
+    </html>
+{{< /highlight >}}
+
+#### Chroma Syntax Highlighter를 이용한 코드 블럭 예시
+
+Hugo는 Chroma Syntax Highlighter를 내장하고 있습니다.  
+Chroma Syntax Highlighter는 Go 언어로 제작되어 매우 빠른 속도를 자랑합니다.
+
 {{< highlight html >}}
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="utf-8">
-  <title>Example HTML5 Document</title>
+  <title>HTML5 코드 예시</title>
 </head>
 <body>
   <p>Test</p>
@@ -117,52 +234,113 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
 </html>
 {{< /highlight >}}
 
-#### Diff code block
+**\[ Code \]**
 
-```diff
-[dependencies.bevy]
-git = "https://github.com/bevyengine/bevy"
-rev = "11f52b8c72fc3a568e8bb4a4cd1f3eb025ac2e13"
-- features = ["dynamic"]
-+ features = ["jpeg", "dynamic"]
+```markdown
+{{</* highlight html */>}}
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>HTML5 코드 예시</title>
+</head>
+<body>
+  <p>Test</p>
+</body>
+</html>
+{{</* /highlight */>}}
 ```
 
-## List Types
+#### Diff 코드 블럭 예시
 
-#### Ordered List
+마크다운은 Diff를 지원하여 코드의 변경사항을 표시할 수 있습니다.
 
-1. First item
-2. Second item
-3. Third item
+```diff
+int main()
+{
+- printf("Hi, I'm Wrongtory.");
++ printf("Hi, I'm Wontory.");
+}
+```
 
-#### Unordered List
+**\[ Code \]**
 
-* List item
-* Another item
-* And another item
+{{< highlight markdown >}}
+```diff
+int main()
+{
+- printf("Hi, I'm Wrongtory.");
++ printf("Hi, I'm Wontory.");
+}
+```
+{{< /highlight >}}
 
-#### Nested list
+&nbsp;  
 
-* Fruit
-  * Apple
-  * Orange
-  * Banana
-* Dairy
-  * Milk
-  * Cheese
+## 목록
 
-## Other Elements — abbr, sub, sup, kbd, mark
+#### 순서가 있는 목록 예시
 
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
+1. 첫 번째 항목
+2. 두 번째 항목
+3. 세 번째 항목
 
-H<sub>2</sub>O
+**\[ Code \]**
 
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
+```markdown
+1. 첫 번째 항목
+2. 두 번째 항목
+3. 세 번째 항목
+```
 
-Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
+#### 순서가 없는 목록 예시
 
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+* 항목
+* 다른 항목
+* 또 다른 항목
 
-## Hyperlinked image
+**\[ Code \]**
 
-[![Google](https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png)](https://google.com)
+```markdown
+* 항목
+* 다른 항목
+* 또 다른 항목
+```
+
+#### 중첩 목록 예시
+
+* 과일
+  * 사과
+  * 오렌지
+  * 바나나
+* 유제품
+  1. 우유
+  2. 치즈
+
+**\[ Code \]**
+
+```markdown
+* 과일
+  * 사과
+  * 오렌지
+  * 바나나
+* 유제품
+  1. 우유
+  2. 치즈
+```
+
+&nbsp;  
+
+## 그 외의 요소 — abbr, sub, sup, kbd, mark
+
+Hugo의 Stack 테마에서는 지원하지 않습니다.
+
+&nbsp;  
+
+## 하이퍼링크 이미지
+
+[![Google](https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png)](https://google.com)
+
+```markdown
+[![Google](https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png)](https://google.com)
+```
