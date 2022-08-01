@@ -1,0 +1,238 @@
+<!doctype html><html lang=en-us dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="마크다운, 서식이 있는 문서를 작성하는 쉽고 편리한 언어"><title>마크다운 문법 정리 (Markdown Syntax)</title><link rel=canonical href=https://wontory.github.io/p/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AC%B8%EB%B2%95-%EC%A0%95%EB%A6%AC-markdown-syntax/><link rel=stylesheet href=/scss/style.min.ac77dcf8b111b51da39a92990f431923f210f3876d85798a2125667f96dc33a4.css><meta property="og:title" content="마크다운 문법 정리 (Markdown Syntax)"><meta property="og:description" content="마크다운, 서식이 있는 문서를 작성하는 쉽고 편리한 언어"><meta property="og:url" content="https://wontory.github.io/p/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AC%B8%EB%B2%95-%EC%A0%95%EB%A6%AC-markdown-syntax/"><meta property="og:site_name" content="Wontory"><meta property="og:type" content="article"><meta property="article:section" content="Post"><meta property="article:tag" content="markdown"><meta property="article:tag" content="css"><meta property="article:tag" content="html"><meta property="article:tag" content="themes"><meta property="article:published_time" content="2022-08-01T00:00:00+00:00"><meta property="article:modified_time" content="2022-08-01T00:00:00+00:00"><meta property="og:image" content="https://wontory.github.io/p/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AC%B8%EB%B2%95-%EC%A0%95%EB%A6%AC-markdown-syntax/markdown_banner.png"><meta name=twitter:title content="마크다운 문법 정리 (Markdown Syntax)"><meta name=twitter:description content="마크다운, 서식이 있는 문서를 작성하는 쉽고 편리한 언어"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://wontory.github.io/p/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AC%B8%EB%B2%95-%EC%A0%95%EB%A6%AC-markdown-syntax/markdown_banner.png"></head><body class=article-page><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"auto")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e=="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky"><button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label="메뉴 여닫기">
+<span class=hamburger-box><span class=hamburger-inner></span></span></button><header><figure class=site-avatar><a href=/><img src=/img/avatar_hu8fed24940d3b926b7af1104f98ff9344_97930_300x0_resize_box_3.png width=300 height=300 class=site-logo loading=lazy alt=Avatar></a>
+<span class=emoji>😷</span></figure><div class=site-meta><h1 class=site-name><a href=/>Wontory</a></h1><h2 class=site-description>FE 개발자 / UX 엔지니어</h2></div></header><ol class=social-menu><li><a href=https://github.com/wontory/ target=_blank title=GitHub><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6.0 00-1.3-3.2 4.2 4.2.0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3.0 00-6.2.0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2.0 00-.1 3.2A4.6 4.6.0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a></li><li><a href=https://www.instagram.com/cswon.js/ target=_blank title=Instagram><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="12" cy="12" r="3"/><line x1="16.5" y1="7.5" x2="16.5" y2="7.501"/></svg></a></li></ol><ol class=menu id=main-menu><li><a href=/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="5 12 3 12 12 3 21 12 19 12"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/><path d="M9 21v-6a2 2 0 012-2h2a2 2 0 012 2v6"/></svg><span>홈</span></a></li><li><a href=/profile/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg><span>프로필</span></a></li><li><a href=/archives/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="4" rx="2"/><path d="M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg><span>아카이브</span></a></li><li><a href=/search/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg><span>검색</span></a></li><li><a href=/links/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M10 14a3.5 3.5.0 005 0l4-4a3.5 3.5.0 00-5-5l-.5.5"/><path d="M14 10a3.5 3.5.0 00-5 0l-4 4a3.5 3.5.0 005 5l.5-.5"/></svg><span>링크</span></a></li><div class=menu-bottom-section><li id=dark-mode-toggle><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="8" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="16" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><span>다크 모드</span></li></div></ol></aside><main class="main full-width"><article class="has-image main-article"><header class=article-header><div class=article-image><a href=/p/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AC%B8%EB%B2%95-%EC%A0%95%EB%A6%AC-markdown-syntax/><img src=/p/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AC%B8%EB%B2%95-%EC%A0%95%EB%A6%AC-markdown-syntax/markdown_banner_hu33641d82194f9d4829b75bdda6236c7d_6945_800x0_resize_box_3.png srcset="/p/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AC%B8%EB%B2%95-%EC%A0%95%EB%A6%AC-markdown-syntax/markdown_banner_hu33641d82194f9d4829b75bdda6236c7d_6945_800x0_resize_box_3.png 800w, /p/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AC%B8%EB%B2%95-%EC%A0%95%EB%A6%AC-markdown-syntax/markdown_banner_hu33641d82194f9d4829b75bdda6236c7d_6945_1600x0_resize_box_3.png 1600w" width=800 height=418 loading=lazy alt="Featured image of post 마크다운 문법 정리 (Markdown Syntax)"></a></div><div class=article-details><header class=article-category><a href=/categories/language/>language</a>
+<a href=/categories/syntax/>syntax</a></header><div class=article-title-wrapper><h2 class=article-title><a href=/p/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AC%B8%EB%B2%95-%EC%A0%95%EB%A6%AC-markdown-syntax/>마크다운 문법 정리 (Markdown Syntax)</a></h2><h3 class=article-subtitle>마크다운, 서식이 있는 문서를 작성하는 쉽고 편리한 언어</h3></div><footer class=article-time><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg><time class=article-time--published>Aug 01, 2022</time></div><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg><time class=article-time--reading>4 분 정도</time></div></footer></div></header><section class=article-content><p>본 문서는 Hugo와 Github Pages 포스팅을 위한 마크다운 문법을 서술합니다.<br>또한 Stack 테마에서 기본 HTML 요소가 CSS로 스타일이 정의되어 있는지도 표시합니다.</p><p> </p><h2 id=제목>제목</h2><p>다음의 HTML <code>&lt;h1></code>&mdash;<code>&lt;h6></code> 태그는 6가지 수준의 섹션 제목을 나타냅니다.<br><code>&lt;h1></code>부터 <code>&lt;h6></code>까지 순서대로 높은 섹션 수준을 갖습니다.<br>제목 앞 # 기호의 개수로 섹션 수준을 구분합니다.</p><h1 id=제목1>제목1</h1><h2 id=제목2>제목2</h2><h3 id=제목3>제목3</h3><h4 id=제목4>제목4</h4><h5 id=제목5>제목5</h5><h6 id=제목6>제목6</h6><p><strong>[ Code ]</strong></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-markdown data-lang=markdown><span class=line><span class=cl><span class=gh># 제목1
+</span></span></span><span class=line><span class=cl><span class=gh></span><span class=gu>## 제목2
+</span></span></span><span class=line><span class=cl><span class=gu>### 제목3
+</span></span></span><span class=line><span class=cl><span class=gu>#### 제목4
+</span></span></span><span class=line><span class=cl><span class=gu>##### 제목5
+</span></span></span><span class=line><span class=cl><span class=gu>###### 제목6
+</span></span></span></code></pre></td></tr></table></div></div><p> </p><h2 id=문단>문단</h2><p>문단을 구분할 때는 두 문단 사이에 빈 줄을 추가합니다.</p><h4 id=문단-예시>문단 예시</h4><p>계절이 지나가는 하늘에는 가을로 가득 차 있습니다.<br>나는 아무 걱정도 없이 가을 속의 별들을 다 헤일 듯합니다.<br>가슴 속에 하나 둘 새겨지는 별을 이제 다 못 헤는 것은<br>쉬이 아침이 오는 까닭이요, 내일 밤이 남은 까닭이요,<br>아직 나의 청춘이 다하지 않은 까닭입니다.</p><p>별 하나에 추억과 별 하나에 사랑과<br>별 하나에 쓸쓸함과 별 하나에 동경과<br>별 하나에 시와 별 하나에 어머니, 어머니</p><p><strong>[ Code ]</strong></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-markdown data-lang=markdown><span class=line><span class=cl>계절이 지나가는 하늘에는 가을로 가득 차 있습니다.  
+</span></span><span class=line><span class=cl>나는 아무 걱정도 없이 가을 속의 별들을 다 헤일 듯합니다.  
+</span></span><span class=line><span class=cl>가슴 속에 하나 둘 새겨지는 별을 이제 다 못 헤는 것은  
+</span></span><span class=line><span class=cl>쉬이 아침이 오는 까닭이요, 내일 밤이 남은 까닭이요,  
+</span></span><span class=line><span class=cl>아직 나의 청춘이 다하지 않은 까닭입니다.  
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>별 하나에 추억과 별 하나에 사랑과  
+</span></span><span class=line><span class=cl>별 하나에 쓸쓸함과 별 하나에 동경과  
+</span></span><span class=line><span class=cl>별 하나에 시와 별 하나에 어머니, 어머니
+</span></span></code></pre></td></tr></table></div></div><p> </p><h2 id=인용문>인용문</h2><p><code>&lt;blockquote></code> 요소는 안쪽의 텍스트가 긴 인용문임을 나타내며, 일반적으로 들여쓰기가 적용됩니다.<br><code>&lt;footer></code>나 <code>&lt;cite></code> 요소를 인용문에 선택적으로 적용할 수 있고, 주석이나 약어를 포함할 수 있습니다.</p><h4 id=인용문-예시>인용문 예시</h4><blockquote><p><strong>단순함</strong>은 <em>복잡함</em>보다 더 어렵다.<br>생각을 명확히 하고 단순하게 만들려면 열심히 노력해야 한다.<br>생각을 단순하게 만들 수 있는 단계에 도달하면 산도 움직일 수 있다.
+&mdash; 스티브 잡스<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></p></blockquote><p><strong>[ Code ]</strong></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-markdown data-lang=markdown><span class=line><span class=cl><span class=k>&gt; </span><span class=ge>**단순함**은 *복잡함*보다 더 어렵다. 
+</span></span></span><span class=line><span class=cl><span class=ge></span><span class=k>&gt; </span><span class=ge>생각을 명확히 하고 단순하게 만들려면 열심히 노력해야 한다.  
+</span></span></span><span class=line><span class=cl><span class=ge></span><span class=k>&gt; </span><span class=ge>생각을 단순하게 만들 수 있는 단계에 도달하면 산도 움직일 수 있다.
+</span></span></span><span class=line><span class=cl><span class=ge></span><span class=k>&gt; </span><span class=ge>--- &lt;cite&gt;스티브 잡스[^1]&lt;/cite&gt;
+</span></span></span><span class=line><span class=cl><span class=ge></span>
+</span></span><span class=line><span class=cl>[^1]: 故 스티브 잡스, Business Week(1998)
+</span></span></code></pre></td></tr></table></div></div><p> </p><h2 id=표>표</h2><p>표는 마크다운에서 제공하는 핵심 기능은 아니지만, Hugo에서 지원합니다.<br>인용문과 마찬가지로, 표 내에서 마크다운 문법을 사용할 수 있습니다.<br><code>|</code> 기호로 행을 구분하고 <code>-</code> 기호로 열을 구분합니다.<br>이 때, <code>-</code> 기호는 3개 이상 사용해야 합니다.</p><h4 id=표-예시>표 예시</h4><div class=table-wrapper><table><thead><tr><th>이름</th><th>나이</th></tr></thead><tbody><tr><td>Wontory</td><td>23</td></tr><tr><td>네이버</td><td>24</td></tr><tr><td>카카오</td><td>13</td></tr></tbody></table></div><p><strong>[ Code ]</strong></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-markdown data-lang=markdown><span class=line><span class=cl>| 이름 | 나이 |
+</span></span><span class=line><span class=cl>| --- | --- |
+</span></span><span class=line><span class=cl>| Wontory | 23 |
+</span></span><span class=line><span class=cl>| 네이버 | 24 |
+</span></span><span class=line><span class=cl>| 카카오 | 13 |
+</span></span></code></pre></td></tr></table></div></div><h4 id=표-내-마크다운-예시>표 내 마크다운 예시</h4><div class=table-wrapper><table><thead><tr><th>Italic</th><th>Bold</th><th>Code</th></tr></thead><tbody><tr><td><em>italic</em></td><td><strong>bold</strong></td><td><code>code</code></td></tr></tbody></table></div><p><strong>[ Code ]</strong></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-markdown data-lang=markdown><span class=line><span class=cl>| Italic | Bold | Code |
+</span></span><span class=line><span class=cl>| --- | --- | --- |
+</span></span><span class=line><span class=cl>| <span class=ge>*italic*</span> | <span class=gs>**bold**</span> | <span class=sb>`code`</span> |
+</span></span></code></pre></td></tr></table></div></div><p> </p><h2 id=코드-블럭>코드 블럭</h2><h4 id=-기호backtick를-사용한-코드-블럭-예시>` 기호(Backtick)를 사용한 코드 블럭 예시</h4><p>코드를 ` 기호 3개로 감싸고 언어를 지정해주면 코드 블럭이 활성화됩니다.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-html data-lang=html><span class=line><span class=cl><span class=cp>&lt;!doctype html&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>html</span> <span class=na>lang</span><span class=o>=</span><span class=s>&#34;ko&#34;</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>head</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>&lt;</span><span class=nt>meta</span> <span class=na>charset</span><span class=o>=</span><span class=s>&#34;utf-8&#34;</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>&lt;</span><span class=nt>title</span><span class=p>&gt;</span>HTML5 코드 예시<span class=p>&lt;/</span><span class=nt>title</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>head</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>body</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>&lt;</span><span class=nt>p</span><span class=p>&gt;</span>예시<span class=p>&lt;/</span><span class=nt>p</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>body</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>html</span><span class=p>&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><p><strong>[ Code ]</strong></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-markdown data-lang=markdown><span class=line><span class=cl><span class=s>```html
+</span></span></span><span class=line><span class=cl><span class=s></span><span class=cp>&lt;!doctype html&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>html</span> <span class=na>lang</span><span class=o>=</span><span class=s>&#34;ko&#34;</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>head</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>&lt;</span><span class=nt>meta</span> <span class=na>charset</span><span class=o>=</span><span class=s>&#34;utf-8&#34;</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>&lt;</span><span class=nt>title</span><span class=p>&gt;</span>HTML5 코드 예시<span class=p>&lt;/</span><span class=nt>title</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>head</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>body</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>&lt;</span><span class=nt>p</span><span class=p>&gt;</span>예시<span class=p>&lt;/</span><span class=nt>p</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>body</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>html</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=s>```</span></span></span></code></pre></td></tr></table></div></div><h4 id=들여쓰기를-이용한-코드-블럭-예시>들여쓰기를 이용한 코드 블럭 예시</h4><p>4칸 이상 들여쓰기를 하여 코드 블럭을 적용할 수 있습니다.<br>강조와 줄 번호가 표시되지 않는 특징이 있습니다.</p><pre><code>&lt;!doctype html&gt;
+&lt;html lang=&quot;ko&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;HTML5 코드 예시&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;p&gt;예시&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p><strong>[ Code ]</strong></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-markdown data-lang=markdown><span class=line><span class=cl>    <span class=cp>&lt;!doctype html&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=p>&lt;</span><span class=nt>html</span> <span class=na>lang</span><span class=o>=</span><span class=s>&#34;ko&#34;</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=p>&lt;</span><span class=nt>head</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=p>&lt;</span><span class=nt>meta</span> <span class=na>charset</span><span class=o>=</span><span class=s>&#34;utf-8&#34;</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=p>&lt;</span><span class=nt>title</span><span class=p>&gt;</span>HTML5 코드 예시<span class=p>&lt;/</span><span class=nt>title</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=p>&lt;/</span><span class=nt>head</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=p>&lt;</span><span class=nt>body</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=p>&lt;</span><span class=nt>p</span><span class=p>&gt;</span>예시<span class=p>&lt;/</span><span class=nt>p</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=p>&lt;/</span><span class=nt>body</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=p>&lt;/</span><span class=nt>html</span><span class=p>&gt;</span></span></span></code></pre></td></tr></table></div></div><h4 id=chroma-syntax-highlighter를-이용한-코드-블럭-예시>Chroma Syntax Highlighter를 이용한 코드 블럭 예시</h4><p>Hugo는 Chroma Syntax Highlighter를 내장하고 있습니다.<br>Chroma Syntax Highlighter는 Go 언어로 제작되어 매우 빠른 속도를 자랑합니다.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-html data-lang=html><span class=line><span class=cl><span class=cp>&lt;!doctype html&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>html</span> <span class=na>lang</span><span class=o>=</span><span class=s>&#34;ko&#34;</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>head</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>&lt;</span><span class=nt>meta</span> <span class=na>charset</span><span class=o>=</span><span class=s>&#34;utf-8&#34;</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>&lt;</span><span class=nt>title</span><span class=p>&gt;</span>HTML5 코드 예시<span class=p>&lt;/</span><span class=nt>title</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>head</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>body</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>&lt;</span><span class=nt>p</span><span class=p>&gt;</span>Test<span class=p>&lt;/</span><span class=nt>p</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>body</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>html</span><span class=p>&gt;</span></span></span></code></pre></td></tr></table></div></div><p><strong>[ Code ]</strong></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-markdown data-lang=markdown><span class=line><span class=cl>{{<span class=p>&lt;</span> <span class=nt>highlight</span> <span class=na>html</span> <span class=p>&gt;</span>}}
+</span></span><span class=line><span class=cl><span class=cp>&lt;!doctype html&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>html</span> <span class=na>lang</span><span class=o>=</span><span class=s>&#34;ko&#34;</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>head</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>&lt;</span><span class=nt>meta</span> <span class=na>charset</span><span class=o>=</span><span class=s>&#34;utf-8&#34;</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>&lt;</span><span class=nt>title</span><span class=p>&gt;</span>HTML5 코드 예시<span class=p>&lt;/</span><span class=nt>title</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>head</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>body</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>&lt;</span><span class=nt>p</span><span class=p>&gt;</span>Test<span class=p>&lt;/</span><span class=nt>p</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>body</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>html</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>{{<span class=p>&lt;</span> <span class=p>/</span><span class=nt>highlight</span> <span class=p>&gt;</span>}}
+</span></span></code></pre></td></tr></table></div></div><h4 id=diff-코드-블럭-예시>Diff 코드 블럭 예시</h4><p>마크다운은 Diff를 지원하여 코드의 변경사항을 표시할 수 있습니다.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-diff data-lang=diff><span class=line><span class=cl>int main()
+</span></span><span class=line><span class=cl>{
+</span></span><span class=line><span class=cl><span class=gd>- printf(&#34;Hi, I&#39;m Wrongtory.&#34;);
+</span></span></span><span class=line><span class=cl><span class=gd></span><span class=gi>+ printf(&#34;Hi, I&#39;m Wontory.&#34;);
+</span></span></span><span class=line><span class=cl><span class=gi></span>}
+</span></span></code></pre></td></tr></table></div></div><p><strong>[ Code ]</strong></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-markdown data-lang=markdown><span class=line><span class=cl><span class=s>```diff
+</span></span></span><span class=line><span class=cl><span class=s></span>int main()
+</span></span><span class=line><span class=cl>{
+</span></span><span class=line><span class=cl><span class=gd>- printf(&#34;Hi, I&#39;m Wrongtory.&#34;);
+</span></span></span><span class=line><span class=cl><span class=gd></span><span class=gi>+ printf(&#34;Hi, I&#39;m Wontory.&#34;);
+</span></span></span><span class=line><span class=cl><span class=gi></span>}
+</span></span><span class=line><span class=cl><span class=s>```</span></span></span></code></pre></td></tr></table></div></div><p> </p><h2 id=목록>목록</h2><h4 id=순서가-있는-목록-예시>순서가 있는 목록 예시</h4><ol><li>첫 번째 항목</li><li>두 번째 항목</li><li>세 번째 항목</li></ol><p><strong>[ Code ]</strong></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-markdown data-lang=markdown><span class=line><span class=cl><span class=k>1.</span> 첫 번째 항목
+</span></span><span class=line><span class=cl><span class=k>2.</span> 두 번째 항목
+</span></span><span class=line><span class=cl><span class=k>3.</span> 세 번째 항목
+</span></span></code></pre></td></tr></table></div></div><h4 id=순서가-없는-목록-예시>순서가 없는 목록 예시</h4><ul><li>항목</li><li>다른 항목</li><li>또 다른 항목</li></ul><p><strong>[ Code ]</strong></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-markdown data-lang=markdown><span class=line><span class=cl><span class=k>*</span> 항목
+</span></span><span class=line><span class=cl><span class=k>*</span> 다른 항목
+</span></span><span class=line><span class=cl><span class=k>*</span> 또 다른 항목
+</span></span></code></pre></td></tr></table></div></div><h4 id=중첩-목록-예시>중첩 목록 예시</h4><ul><li>과일<ul><li>사과</li><li>오렌지</li><li>바나나</li></ul></li><li>유제품<ol><li>우유</li><li>치즈</li></ol></li></ul><p><strong>[ Code ]</strong></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-markdown data-lang=markdown><span class=line><span class=cl><span class=k>*</span> 과일
+</span></span><span class=line><span class=cl>  <span class=k>*</span> 사과
+</span></span><span class=line><span class=cl>  <span class=k>*</span> 오렌지
+</span></span><span class=line><span class=cl>  <span class=k>*</span> 바나나
+</span></span><span class=line><span class=cl><span class=k>*</span> 유제품
+</span></span><span class=line><span class=cl>  <span class=k>1.</span> 우유
+</span></span><span class=line><span class=cl>  <span class=k>2.</span> 치즈
+</span></span></code></pre></td></tr></table></div></div><p> </p><h2 id=그-외의-요소--abbr-sub-sup-kbd-mark>그 외의 요소 — abbr, sub, sup, kbd, mark</h2><p>Hugo의 Stack 테마에서는 지원하지 않습니다.</p><p> </p><h2 id=하이퍼링크-이미지>하이퍼링크 이미지</h2><p><a class=link href=https://google.com target=_blank rel=noopener><img src=https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png loading=lazy alt=Google></a></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-markdown data-lang=markdown><span class=line><span class=cl>[<span class=nt>![Google</span>](<span class=na>https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png</span>)](https://google.com)
+</span></span></code></pre></td></tr></table></div></div><div class=footnotes role=doc-endnotes><hr><ol><li id=fn:1><p>故 스티브 잡스, Business Week(1998)&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li></ol></div></section><footer class=article-footer><section class=article-tags><a href=/tags/markdown/>markdown</a>
+<a href=/tags/css/>css</a>
+<a href=/tags/html/>html</a>
+<a href=/tags/themes/>themes</a></section><section class=article-copyright><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg><span>Licensed under CC BY-NC-SA 4.0</span></section></footer></article><div class=disqus-container><div id=disqus_thread></div><script type=application/javascript>window.disqus_config=function(){},function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById("disqus_thread").innerHTML="Disqus comments not available by default when the website is previewed locally.";return}var t=document,e=t.createElement("script");e.async=!0,e.src="//wontorys-devlog.disqus.com/embed.js",e.setAttribute("data-timestamp",+new Date),(t.head||t.body).appendChild(e)}()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></div><style>.disqus-container{background-color:var(--card-background);border-radius:var(--card-border-radius);box-shadow:var(--shadow-l1);padding:var(--card-padding)}</style><script>window.addEventListener("onColorSchemeChange",e=>{typeof DISQUS=="object"&&DISQUS.reset({reload:!0})})</script><footer class=site-footer><section class=copyright>&copy;
+2022 Wontory</section><section class=powerby>Powered by <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a><br><b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=3.12.0>Stack</a></b> by <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a></section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title=Share></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=" crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=" crossorigin=anonymous defer></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css crossorigin=anonymous></main><aside class="sidebar right-sidebar sticky"><section class="widget archives"><div class=widget-icon><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg></div><h2 class="widget-title section-title">목차</h2><div class=widget--toc><nav id=TableOfContents><ol><li><a href=#제목>제목</a></li></ol><ol><li><a href=#제목2>제목2</a><ol><li><a href=#제목3>제목3</a><ol><li><a href=#제목4>제목4</a></li></ol></li></ol></li><li><a href=#문단>문단</a><ol><li><ol><li><a href=#문단-예시>문단 예시</a></li></ol></li></ol></li><li><a href=#인용문>인용문</a><ol><li><ol><li><a href=#인용문-예시>인용문 예시</a></li></ol></li></ol></li><li><a href=#표>표</a><ol><li><ol><li><a href=#표-예시>표 예시</a></li><li><a href=#표-내-마크다운-예시>표 내 마크다운 예시</a></li></ol></li></ol></li><li><a href=#코드-블럭>코드 블럭</a><ol><li><ol><li><a href=#-기호backtick를-사용한-코드-블럭-예시>` 기호(Backtick)를 사용한 코드 블럭 예시</a></li><li><a href=#들여쓰기를-이용한-코드-블럭-예시>들여쓰기를 이용한 코드 블럭 예시</a></li><li><a href=#chroma-syntax-highlighter를-이용한-코드-블럭-예시>Chroma Syntax Highlighter를 이용한 코드 블럭 예시</a></li><li><a href=#diff-코드-블럭-예시>Diff 코드 블럭 예시</a></li></ol></li></ol></li><li><a href=#목록>목록</a><ol><li><ol><li><a href=#순서가-있는-목록-예시>순서가 있는 목록 예시</a></li><li><a href=#순서가-없는-목록-예시>순서가 없는 목록 예시</a></li><li><a href=#중첩-목록-예시>중첩 목록 예시</a></li></ol></li></ol></li><li><a href=#그-외의-요소--abbr-sub-sup-kbd-mark>그 외의 요소 — abbr, sub, sup, kbd, mark</a></li><li><a href=#하이퍼링크-이미지>하이퍼링크 이미지</a></li></ol></nav></div></section></aside></div><script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z+KMkF24hUW8WePSA9HM=" crossorigin=anonymous></script><script type=text/javascript src=/ts/main.js defer></script>
+<script>(function(){const e=document.createElement("link");e.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",e.type="text/css",e.rel="stylesheet",document.head.appendChild(e)})()</script></body></html>
