@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>language on Wontory</title><link>https://wontory.github.io/categories/language/</link><description>Recent content in language on Wontory</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 01 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://wontory.github.io/categories/language/index.xml" rel="self" type="application/rss+xml"/><item><title>마크다운 문법 정리 (Markdown Syntax)</title><link>https://wontory.github.io/p/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AC%B8%EB%B2%95-%EC%A0%95%EB%A6%AC-markdown-syntax/</link><pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate><guid>https://wontory.github.io/p/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AC%B8%EB%B2%95-%EC%A0%95%EB%A6%AC-markdown-syntax/</guid><description>&lt;img src="https://wontory.github.io/p/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AC%B8%EB%B2%95-%EC%A0%95%EB%A6%AC-markdown-syntax/markdown_banner.png" alt="Featured image of post 마크다운 문법 정리 (Markdown Syntax)" />&lt;p>본 문서는 Hugo와 Github Pages 포스팅을 위한 마크다운 문법을 서술합니다.&lt;br>
-또한 Stack 테마에서 기본 HTML 요소가 CSS로 스타일이 정의되어 있는지도 표시합니다.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>language on Wontory</title><link>https://wontory.github.io/categories/language/</link><description>Recent content in language on Wontory</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 01 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://wontory.github.io/categories/language/index.xml" rel="self" type="application/rss+xml"/><item><title>마크다운 문법 정리 (Markdown Syntax)</title><link>https://wontory.github.io/p/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AC%B8%EB%B2%95-%EC%A0%95%EB%A6%AC-markdown-syntax/</link><pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate><guid>https://wontory.github.io/p/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AC%B8%EB%B2%95-%EC%A0%95%EB%A6%AC-markdown-syntax/</guid><description>&lt;img src="https://wontory.github.io/p/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AC%B8%EB%B2%95-%EC%A0%95%EB%A6%AC-markdown-syntax/markdown_banner.png" alt="Featured image of post 마크다운 문법 정리 (Markdown Syntax)" />&lt;p>본 문서는 Hugo 및 Github Pages 포스팅을 위한 마크다운 문법을 서술합니다.&lt;/p>
 &lt;p> &lt;/p>
-&lt;h2 id="제목">제목&lt;/h2>
-&lt;p>다음의 HTML &lt;code>&amp;lt;h1&amp;gt;&lt;/code>&amp;mdash;&lt;code>&amp;lt;h6&amp;gt;&lt;/code> 태그는 6가지 수준의 섹션 제목을 나타냅니다.&lt;br>
+&lt;h2 id="제목headings">제목(Headings)&lt;/h2>
+&lt;p>HTML &lt;code>&amp;lt;h1&amp;gt;&lt;/code>&amp;mdash;&lt;code>&amp;lt;h6&amp;gt;&lt;/code> 요소는 6가지 수준의 섹션 제목을 나타냅니다.&lt;br>
 &lt;code>&amp;lt;h1&amp;gt;&lt;/code>부터 &lt;code>&amp;lt;h6&amp;gt;&lt;/code>까지 순서대로 높은 섹션 수준을 갖습니다.&lt;br>
-제목 앞 # 기호의 개수로 섹션 수준을 구분합니다.&lt;/p>
+마크다운에서는 제목 앞 # 기호의 개수로 섹션 수준을 구분합니다.&lt;/p>
 &lt;h1 id="제목1">제목1&lt;/h1>
 &lt;h2 id="제목2">제목2&lt;/h2>
 &lt;h3 id="제목3">제목3&lt;/h3>
@@ -31,7 +30,7 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p> &lt;/p>
-&lt;h2 id="문단">문단&lt;/h2>
+&lt;h2 id="문단paragraphs">문단(Paragraphs)&lt;/h2>
 &lt;p>문단을 구분할 때는 두 문단 사이에 빈 줄을 추가합니다.&lt;/p>
 &lt;h4 id="문단-예시">문단 예시&lt;/h4>
 &lt;p>계절이 지나가는 하늘에는 가을로 가득 차 있습니다.&lt;br>
@@ -68,14 +67,61 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p> &lt;/p>
-&lt;h2 id="인용문">인용문&lt;/h2>
+&lt;h2 id="줄-바꿈line-breaks">줄 바꿈(Line Breaks)&lt;/h2>
+&lt;p>줄 바꿈을 하기 위해서는 문장 끝에 2개 이상 공백(스페이스 바)을 넣고, 다음 줄에 내용을 입력하면 됩니다.&lt;/p>
+&lt;h4 id="줄-바꿈-예시">줄 바꿈 예시&lt;/h4>
+&lt;p>&amp;ldquo;그만 거둘까?&amp;rdquo;&lt;br>
+&amp;ldquo;잘 생각했네.봉평장에서 한번이나 흐뭇하게 사본 일 있을까.내일 대화장에서나 한몫 벌어야겠네.&amp;rdquo;&lt;br>
+&amp;ldquo;오늘밤은 밤을 새서 걸어야 될걸?&amp;rdquo;&lt;br>
+&amp;ldquo;달이 뜨렷다?&amp;rdquo;&lt;/p>
+&lt;p>&lt;strong>[ Code ]&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">&amp;#34;그만 거둘까?&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#34;잘 생각했네.봉평장에서 한번이나 흐뭇하게 사본 일 있을까.내일 대화장에서나 한몫 벌어야겠네.&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#34;오늘밤은 밤을 새서 걸어야 될걸?&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#34;달이 뜨렷다?&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p> &lt;/p>
+&lt;h2 id="구분선horizontal-rules">구분선(Horizontal Rules)&lt;/h2>
+&lt;p>&lt;code>*&lt;/code> 기호, &lt;code>-&lt;/code> 기호, &lt;code>_&lt;/code> 기호를 3개 이상 작성하여 구분선을 표시할 수 있습니다.&lt;/p>
+&lt;h4 id="구분선-예시">구분선 예시&lt;/h4>
+&lt;hr>
+&lt;hr>
+&lt;hr>
+&lt;p>&lt;strong>[ Code ]&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">***
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">---
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gs">_____________&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p> &lt;/p>
+&lt;h2 id="인용문blockquotes">인용문(Blockquotes)&lt;/h2>
 &lt;p>&lt;code>&amp;lt;blockquote&amp;gt;&lt;/code> 요소는 안쪽의 텍스트가 긴 인용문임을 나타내며, 일반적으로 들여쓰기가 적용됩니다.&lt;br>
 &lt;code>&amp;lt;footer&amp;gt;&lt;/code>나 &lt;code>&amp;lt;cite&amp;gt;&lt;/code> 요소를 인용문에 선택적으로 적용할 수 있고, 주석이나 약어를 포함할 수 있습니다.&lt;/p>
 &lt;h4 id="인용문-예시">인용문 예시&lt;/h4>
 &lt;blockquote>
 &lt;p>&lt;strong>단순함&lt;/strong>은 &lt;em>복잡함&lt;/em>보다 더 어렵다.&lt;br>
 생각을 명확히 하고 단순하게 만들려면 열심히 노력해야 한다.&lt;br>
-생각을 단순하게 만들 수 있는 단계에 도달하면 산도 움직일 수 있다.
+생각을 단순하게 만들 수 있는 단계에 도달하면 산도 움직일 수 있다.&lt;br>
 &amp;mdash; &lt;!-- raw HTML omitted -->스티브 잡스&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;!-- raw HTML omitted -->&lt;/p>
 &lt;/blockquote>
 &lt;p>&lt;strong>[ Code ]&lt;/strong>&lt;/p>
@@ -98,7 +144,7 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p> &lt;/p>
-&lt;h2 id="표">표&lt;/h2>
+&lt;h2 id="표tables">표(Tables)&lt;/h2>
 &lt;p>표는 마크다운에서 제공하는 핵심 기능은 아니지만, Hugo에서 지원합니다.&lt;br>
 인용문과 마찬가지로, 표 내에서 마크다운 문법을 사용할 수 있습니다.&lt;br>
 &lt;code>|&lt;/code> 기호로 행을 구분하고 &lt;code>-&lt;/code> 기호로 열을 구분합니다.&lt;br>
@@ -149,6 +195,7 @@
 &lt;tr>
 &lt;th>Italic&lt;/th>
 &lt;th>Bold&lt;/th>
+&lt;th>Bold and Italic&lt;/th>
 &lt;th>Code&lt;/th>
 &lt;/tr>
 &lt;/thead>
@@ -156,6 +203,7 @@
 &lt;tr>
 &lt;td>&lt;em>italic&lt;/em>&lt;/td>
 &lt;td>&lt;strong>bold&lt;/strong>&lt;/td>
+&lt;td>&lt;em>&lt;strong>bold and italic&lt;/strong>&lt;/em>&lt;/td>
 &lt;td>&lt;code>code&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;/tbody>
@@ -168,15 +216,20 @@
 &lt;/span>&lt;span class="lnt">3
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">| Italic | Bold | Code |
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| --- | --- | --- |
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| &lt;span class="ge">*italic*&lt;/span> | &lt;span class="gs">**bold**&lt;/span> | &lt;span class="sb">`code`&lt;/span> |
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">| Italic | Bold | Bold and Italic | Code |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| --- | --- | --- | --- |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| &lt;span class="ge">*italic*&lt;/span> | &lt;span class="gs">**bold**&lt;/span> | &lt;span class="ge">**&lt;/span>*bold and italic*** | &lt;span class="sb">`code`&lt;/span> |
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p> &lt;/p>
-&lt;h2 id="코드-블럭">코드 블럭&lt;/h2>
+&lt;h2 id="코드-블럭code-blocks">코드 블럭(Code Blocks)&lt;/h2>
+&lt;p>일반적으로 코드는 ` 기호 1개로 묶어 사용하지만,&lt;br>
+여러 줄의 코드를 블로그에 삽입할 때는 코드 블럭을 사용합니다.&lt;br>
+코드블럭은 Syntax Highlight를 지원하여 코드를 더 보기 쉽게 정리할 수 있습니다.&lt;/p>
 &lt;h4 id="-기호backtick를-사용한-코드-블럭-예시">` 기호(Backtick)를 사용한 코드 블럭 예시&lt;/h4>
-&lt;p>코드를 ` 기호 3개로 감싸고 언어를 지정해주면 코드 블럭이 활성화됩니다.&lt;/p>
+&lt;p>코드를 ` 기호 3개로 감싸고 언어를 지정해주면 코드 블럭이 활성화됩니다.&lt;br>
+언어를 지정하지 않아도 코드 블럭을 사용할 수 있지만,&lt;br>
+Syntax Highlight는 사용할 수 없습니다.&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -276,8 +329,8 @@
 &lt;/div>
 &lt;/div>
 &lt;h4 id="chroma-syntax-highlighter를-이용한-코드-블럭-예시">Chroma Syntax Highlighter를 이용한 코드 블럭 예시&lt;/h4>
-&lt;p>Hugo는 Chroma Syntax Highlighter를 내장하고 있습니다.&lt;br>
-Chroma Syntax Highlighter는 Go 언어로 제작되어 매우 빠른 속도를 자랑합니다.&lt;/p>
+&lt;p>다음은 외부 Syntax Highlighter를 블로그에 적용했을 경우에만 해당합니다.&lt;br>
+Chroma의 경우, 사용법은 다음과 같습니다.&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -336,7 +389,7 @@ Chroma Syntax Highlighter는 Go 언어로 제작되어 매우 빠른 속도를 �
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;h4 id="diff-코드-블럭-예시">Diff 코드 블럭 예시&lt;/h4>
-&lt;p>마크다운은 Diff를 지원하여 코드의 변경사항을 표시할 수 있습니다.&lt;/p>
+&lt;p>마크다운은 Diff를 지원하여 코드의 변경사항을 표기할 수 있습니다.&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -375,7 +428,7 @@ Chroma Syntax Highlighter는 Go 언어로 제작되어 매우 빠른 속도를 �
 &lt;/div>
 &lt;/div>
 &lt;p> &lt;/p>
-&lt;h2 id="목록">목록&lt;/h2>
+&lt;h2 id="목록lists">목록(Lists)&lt;/h2>
 &lt;h4 id="순서가-있는-목록-예시">순서가 있는 목록 예시&lt;/h4>
 &lt;ol>
 &lt;li>첫 번째 항목&lt;/li>
@@ -401,17 +454,43 @@ Chroma Syntax Highlighter는 Go 언어로 제작되어 매우 빠른 속도를 �
 &lt;li>다른 항목&lt;/li>
 &lt;li>또 다른 항목&lt;/li>
 &lt;/ul>
+&lt;ul>
+&lt;li>항목&lt;/li>
+&lt;li>다른 항목&lt;/li>
+&lt;li>또 다른 항목&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>항목&lt;/li>
+&lt;li>다른 항목&lt;/li>
+&lt;li>또 다른 항목&lt;/li>
+&lt;/ul>
 &lt;p>&lt;strong>[ Code ]&lt;/strong>&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">&lt;span class="k">*&lt;/span> 항목
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">*&lt;/span> 다른 항목
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">*&lt;/span> 또 다른 항목
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">+ 항목
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">+ 다른 항목
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">+ 또 다른 항목
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">-&lt;/span> 항목
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">-&lt;/span> 다른 항목
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">-&lt;/span> 또 다른 항목
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;h4 id="중첩-목록-예시">중첩 목록 예시&lt;/h4>
@@ -452,10 +531,10 @@ Chroma Syntax Highlighter는 Go 언어로 제작되어 매우 빠른 속도를 �
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p> &lt;/p>
-&lt;h2 id="그-외의-요소--abbr-sub-sup-kbd-mark">그 외의 요소 — abbr, sub, sup, kbd, mark&lt;/h2>
-&lt;p>Hugo의 Stack 테마에서는 지원하지 않습니다.&lt;/p>
-&lt;p> &lt;/p>
-&lt;h2 id="하이퍼링크-이미지">하이퍼링크 이미지&lt;/h2>
+&lt;h2 id="하이퍼링크-이미지">하이퍼링크 이미지()&lt;/h2>
+&lt;p>이미지를 추가할 때는 &lt;code>![이미지 설명](이미지 경로)&lt;/code>와 같이 입력하면 됩니다.&lt;br>
+하이퍼링크 양식인 &lt;code>[주소 설명](주소)&lt;/code> 앞에 ! 기호를 추가한 것과 같습니다.&lt;br>
+이미지 양식을 하이퍼링크 양식 안으로 넣어주면 이미지에 하이퍼링크를 적용할 수 있습니다.&lt;/p>
 &lt;p>&lt;a class="link" href="https://google.com" target="_blank" rel="noopener"
 >&lt;img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
 loading="lazy"
