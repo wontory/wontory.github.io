@@ -17,17 +17,16 @@ series = ["Themes Guide"]
 image = "markdown_banner.png"
 +++
 
-본 문서는 Hugo와 Github Pages 포스팅을 위한 마크다운 문법을 서술합니다.  
-또한 Stack 테마에서 기본 HTML 요소가 CSS로 스타일이 정의되어 있는지도 표시합니다.
+본 문서는 Hugo 및 Github Pages 포스팅을 위한 마크다운 문법을 서술합니다.
 <!--more-->
 
-&nbsp;  
+&nbsp;
 
-## 제목
+## 제목(Headings)
 
-다음의 HTML `<h1>`---`<h6>` 태그는 6가지 수준의 섹션 제목을 나타냅니다.  
+HTML `<h1>`---`<h6>` 요소는 6가지 수준의 섹션 제목을 나타냅니다.  
 `<h1>`부터 `<h6>`까지 순서대로 높은 섹션 수준을 갖습니다.  
-제목 앞 # 기호의 개수로 섹션 수준을 구분합니다.
+마크다운에서는 제목 앞 # 기호의 개수로 섹션 수준을 구분합니다.
 
 # 제목1
 ## 제목2
@@ -47,9 +46,9 @@ image = "markdown_banner.png"
 ###### 제목6
 ```
 
-&nbsp;  
+&nbsp;
 
-## 문단
+## 문단(Paragraphs)
 
 문단을 구분할 때는 두 문단 사이에 빈 줄을 추가합니다.
 
@@ -79,9 +78,55 @@ image = "markdown_banner.png"
 별 하나에 시와 별 하나에 어머니, 어머니
 ```
 
-&nbsp;  
+&nbsp;
 
-## 인용문
+## 줄 바꿈(Line Breaks)
+
+줄 바꿈을 하기 위해서는 문장 끝에 2개 이상 공백(스페이스 바)을 넣고, 다음 줄에 내용을 입력하면 됩니다.
+
+#### 줄 바꿈 예시
+
+"그만 거둘까?"  
+"잘 생각했네.봉평장에서 한번이나 흐뭇하게 사본 일 있을까.내일 대화장에서나 한몫 벌어야겠네."  
+"오늘밤은 밤을 새서 걸어야 될걸?"  
+"달이 뜨렷다?"
+
+**\[ Code \]**
+
+```markdown
+"그만 거둘까?"  
+"잘 생각했네.봉평장에서 한번이나 흐뭇하게 사본 일 있을까.내일 대화장에서나 한몫 벌어야겠네."  
+"오늘밤은 밤을 새서 걸어야 될걸?"  
+"달이 뜨렷다?"
+```
+
+&nbsp;
+
+## 구분선(Horizontal Rules)
+
+`*` 기호, `-` 기호, `_` 기호를 3개 이상 작성하여 구분선을 표시할 수 있습니다.
+
+#### 구분선 예시
+
+***
+
+---
+
+_____________
+
+**\[ Code \]**
+
+```markdown
+***
+
+---
+
+_____________
+```
+
+&nbsp;
+
+## 인용문(Blockquotes)
 
 `<blockquote>` 요소는 안쪽의 텍스트가 긴 인용문임을 나타내며, 일반적으로 들여쓰기가 적용됩니다.  
 `<footer>`나 `<cite>` 요소를 인용문에 선택적으로 적용할 수 있고, 주석이나 약어를 포함할 수 있습니다.
@@ -90,7 +135,7 @@ image = "markdown_banner.png"
 
 > **단순함**은 *복잡함*보다 더 어렵다.  
 > 생각을 명확히 하고 단순하게 만들려면 열심히 노력해야 한다.  
-> 생각을 단순하게 만들 수 있는 단계에 도달하면 산도 움직일 수 있다.
+> 생각을 단순하게 만들 수 있는 단계에 도달하면 산도 움직일 수 있다.  
 > --- <cite>스티브 잡스[^1]</cite>
 
 [^1]: 故 스티브 잡스, Business Week(1998)
@@ -106,9 +151,9 @@ image = "markdown_banner.png"
 [^1]: 故 스티브 잡스, Business Week(1998)
 ```
 
-&nbsp;  
+&nbsp;
 
-## 표
+## 표(Tables)
 
 표는 마크다운에서 제공하는 핵심 기능은 아니지만, Hugo에서 지원합니다.  
 인용문과 마찬가지로, 표 내에서 마크다운 문법을 사용할 수 있습니다.  
@@ -135,25 +180,31 @@ image = "markdown_banner.png"
 
 #### 표 내 마크다운 예시
 
-| Italic | Bold | Code |
-| --- | --- | --- |
-| *italic* | **bold** | `code` |
+| Italic | Bold | Bold and Italic | Code |
+| --- | --- | --- | --- |
+| *italic* | **bold** | ***bold and italic*** | `code` |
 
 **\[ Code \]**
 
 ```markdown
-| Italic | Bold | Code |
-| --- | --- | --- |
-| *italic* | **bold** | `code` |
+| Italic | Bold | Bold and Italic | Code |
+| --- | --- | --- | --- |
+| *italic* | **bold** | ***bold and italic*** | `code` |
 ```
 
-&nbsp;  
+&nbsp;
 
-## 코드 블럭
+## 코드 블럭(Code Blocks)
+
+일반적으로 코드는 \` 기호 1개로 묶어 사용하지만,  
+여러 줄의 코드를 블로그에 삽입할 때는 코드 블럭을 사용합니다.  
+코드블럭은 Syntax Highlight를 지원하여 코드를 더 보기 쉽게 정리할 수 있습니다.
 
 #### \` 기호(Backtick)를 사용한 코드 블럭 예시
 
-코드를 \` 기호 3개로 감싸고 언어를 지정해주면 코드 블럭이 활성화됩니다. 
+코드를 \` 기호 3개로 감싸고 언어를 지정해주면 코드 블럭이 활성화됩니다.  
+언어를 지정하지 않아도 코드 블럭을 사용할 수 있지만,  
+Syntax Highlight는 사용할 수 없습니다.
 
 ```html
 <!doctype html>
@@ -218,8 +269,8 @@ image = "markdown_banner.png"
 
 #### Chroma Syntax Highlighter를 이용한 코드 블럭 예시
 
-Hugo는 Chroma Syntax Highlighter를 내장하고 있습니다.  
-Chroma Syntax Highlighter는 Go 언어로 제작되어 매우 빠른 속도를 자랑합니다.
+다음은 외부 Syntax Highlighter를 블로그에 적용했을 경우에만 해당합니다.  
+Chroma의 경우, 사용법은 다음과 같습니다.
 
 {{< highlight html >}}
 <!doctype html>
@@ -253,7 +304,7 @@ Chroma Syntax Highlighter는 Go 언어로 제작되어 매우 빠른 속도를 �
 
 #### Diff 코드 블럭 예시
 
-마크다운은 Diff를 지원하여 코드의 변경사항을 표시할 수 있습니다.
+마크다운은 Diff를 지원하여 코드의 변경사항을 표기할 수 있습니다.
 
 ```diff
 int main()
@@ -275,9 +326,9 @@ int main()
 ```
 {{< /highlight >}}
 
-&nbsp;  
+&nbsp;
 
-## 목록
+## 목록(Lists)
 
 #### 순서가 있는 목록 예시
 
@@ -299,12 +350,28 @@ int main()
 * 다른 항목
 * 또 다른 항목
 
++ 항목
++ 다른 항목
++ 또 다른 항목
+
+- 항목
+- 다른 항목
+- 또 다른 항목
+
 **\[ Code \]**
 
 ```markdown
 * 항목
 * 다른 항목
 * 또 다른 항목
+
++ 항목
++ 다른 항목
++ 또 다른 항목
+
+- 항목
+- 다른 항목
+- 또 다른 항목
 ```
 
 #### 중첩 목록 예시
@@ -329,15 +396,13 @@ int main()
   2. 치즈
 ```
 
-&nbsp;  
+&nbsp;
 
-## 그 외의 요소 — abbr, sub, sup, kbd, mark
+## 하이퍼링크 이미지()
 
-Hugo의 Stack 테마에서는 지원하지 않습니다.
-
-&nbsp;  
-
-## 하이퍼링크 이미지
+이미지를 추가할 때는 `![이미지 설명](이미지 경로)`와 같이 입력하면 됩니다.  
+하이퍼링크 양식인 `[주소 설명](주소)` 앞에 ! 기호를 추가한 것과 같습니다.  
+이미지 양식을 하이퍼링크 양식 안으로 넣어주면 이미지에 하이퍼링크를 적용할 수 있습니다.
 
 [![Google](https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png)](https://google.com)
 
