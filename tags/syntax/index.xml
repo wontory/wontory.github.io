@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>syntax on Wontory</title><link>https://wontory.github.io/categories/syntax/</link><description>Recent content in syntax on Wontory</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 01 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://wontory.github.io/categories/syntax/index.xml" rel="self" type="application/rss+xml"/><item><title>마크다운 문법 정리 (Markdown Syntax)</title><link>https://wontory.github.io/p/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AC%B8%EB%B2%95-%EC%A0%95%EB%A6%AC-markdown-syntax/</link><pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate><guid>https://wontory.github.io/p/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AC%B8%EB%B2%95-%EC%A0%95%EB%A6%AC-markdown-syntax/</guid><description>&lt;img src="https://wontory.github.io/p/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AC%B8%EB%B2%95-%EC%A0%95%EB%A6%AC-markdown-syntax/markdown_banner.png" alt="Featured image of post 마크다운 문법 정리 (Markdown Syntax)" />&lt;p>본 문서는 Hugo 및 Github Pages 포스팅을 위한 마크다운 문법을 서술합니다.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>syntax on Wontory</title><link>https://wontory.github.io/tags/syntax/</link><description>Recent content in syntax on Wontory</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 01 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://wontory.github.io/tags/syntax/index.xml" rel="self" type="application/rss+xml"/><item><title>마크다운 문법 정리 (Markdown Syntax)</title><link>https://wontory.github.io/p/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AC%B8%EB%B2%95-%EC%A0%95%EB%A6%AC-markdown-syntax/</link><pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate><guid>https://wontory.github.io/p/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AC%B8%EB%B2%95-%EC%A0%95%EB%A6%AC-markdown-syntax/</guid><description>&lt;img src="https://wontory.github.io/p/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AC%B8%EB%B2%95-%EC%A0%95%EB%A6%AC-markdown-syntax/markdown_banner.png" alt="Featured image of post 마크다운 문법 정리 (Markdown Syntax)" />&lt;p>본 문서는 Hugo 및 Github Pages 포스팅을 위한 마크다운 문법을 서술합니다.&lt;/p>
 &lt;p> &lt;/p>
 &lt;h2 id="제목headings">제목(Headings)&lt;/h2>
 &lt;p>HTML &lt;code>&amp;lt;h1&amp;gt;&lt;/code>&amp;mdash;&lt;code>&amp;lt;h6&amp;gt;&lt;/code> 요소는 6가지 수준의 섹션 제목을 나타냅니다. &lt;code>&amp;lt;h1&amp;gt;&lt;/code>부터 &lt;code>&amp;lt;h6&amp;gt;&lt;/code>까지 순서대로 높은 섹션 수준을 갖습니다. 마크다운에서는 제목 앞 &lt;code>#&lt;/code> 기호의 개수로 섹션 수준을 구분합니다.&lt;/p>
@@ -527,11 +527,13 @@ data-flex-basis="355px"
 &lt;/div>&lt;p> &lt;/p>
 &lt;h2 id="하이퍼링크-이미지linking-images">하이퍼링크 이미지(Linking Images)&lt;/h2>
 &lt;p>이미지를 추가할 때는 &lt;code>![이미지 설명](이미지 경로)&lt;/code>와 같이 입력하면 됩니다. 하이퍼링크 양식인 &lt;code>[주소 설명](주소)&lt;/code> 앞에 ! 기호를 추가한 것과 같습니다. 이미지 양식을 하이퍼링크 양식 안으로 넣어주면 이미지에 하이퍼링크를 적용할 수 있습니다.&lt;/p>
+&lt;h4 id="하이퍼링크-이미지-예시">하이퍼링크 이미지 예시&lt;/h4>
 &lt;p>&lt;a class="link" href="https://google.com" target="_blank" rel="noopener"
 >&lt;img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
 loading="lazy"
 alt="Google"
 >&lt;/a>&lt;/p>
+&lt;p>&lt;strong>[ Code ]&lt;/strong>&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1

@@ -527,11 +527,13 @@ data-flex-basis="355px"
 &lt;/div>&lt;p> &lt;/p>
 &lt;h2 id="하이퍼링크-이미지linking-images">하이퍼링크 이미지(Linking Images)&lt;/h2>
 &lt;p>이미지를 추가할 때는 &lt;code>![이미지 설명](이미지 경로)&lt;/code>와 같이 입력하면 됩니다. 하이퍼링크 양식인 &lt;code>[주소 설명](주소)&lt;/code> 앞에 ! 기호를 추가한 것과 같습니다. 이미지 양식을 하이퍼링크 양식 안으로 넣어주면 이미지에 하이퍼링크를 적용할 수 있습니다.&lt;/p>
+&lt;h4 id="하이퍼링크-이미지-예시">하이퍼링크 이미지 예시&lt;/h4>
 &lt;p>&lt;a class="link" href="https://google.com" target="_blank" rel="noopener"
 >&lt;img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
 loading="lazy"
 alt="Google"
 >&lt;/a>&lt;/p>
+&lt;p>&lt;strong>[ Code ]&lt;/strong>&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1

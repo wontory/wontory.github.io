@@ -527,11 +527,13 @@ data-flex-basis="355px"
 &lt;/div>&lt;p> &lt;/p>
 &lt;h2 id="하이퍼링크-이미지linking-images">하이퍼링크 이미지(Linking Images)&lt;/h2>
 &lt;p>이미지를 추가할 때는 &lt;code>![이미지 설명](이미지 경로)&lt;/code>와 같이 입력하면 됩니다. 하이퍼링크 양식인 &lt;code>[주소 설명](주소)&lt;/code> 앞에 ! 기호를 추가한 것과 같습니다. 이미지 양식을 하이퍼링크 양식 안으로 넣어주면 이미지에 하이퍼링크를 적용할 수 있습니다.&lt;/p>
+&lt;h4 id="하이퍼링크-이미지-예시">하이퍼링크 이미지 예시&lt;/h4>
 &lt;p>&lt;a class="link" href="https://google.com" target="_blank" rel="noopener"
 >&lt;img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
 loading="lazy"
 alt="Google"
 >&lt;/a>&lt;/p>
+&lt;p>&lt;strong>[ Code ]&lt;/strong>&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -549,7 +551,7 @@ alt="Google"
 &lt;/ol>
 &lt;/div></description></item><item><title>아카이브</title><link>https://wontory.github.io/archives/</link><pubDate>Fri, 29 Jul 2022 00:00:00 +0000</pubDate><guid>https://wontory.github.io/archives/</guid><description/></item><item><title>프로필</title><link>https://wontory.github.io/profile/</link><pubDate>Fri, 29 Jul 2022 00:00:00 +0000</pubDate><guid>https://wontory.github.io/profile/</guid><description>&lt;p>저는 초등학생 시절 컴퓨터실을 다니며 MS Office를 배웠습니다.&lt;br>
 그 과정에서 컴퓨터와 소프트웨어에 흥미를 느꼈고, 이런 프로그램들은 어떻게 만드는 것인지 찾아보기 시작했습니다.&lt;br>
-비주얼베이직, 게임메이커, 아두이노 등의 활동으로 꿈을 키워갔으며 현재는 경기대학교 컴퓨터공학부에 입학하여 전문적인 지식을 쌓고 있습니다.&lt;br>
+비주얼베이직, 게임메이커, 아두이노 등의 활동으로 꿈을 키워갔으며 현재는 &lt;strong>경기대학교 컴퓨터공학부&lt;/strong>에 입학하여 전문적인 지식을 쌓고 있습니다.&lt;br>
 저의 관심분야는 Front-End, UI/UX이며 현재 React를 공부하고 있습니다.&lt;/p>
 &lt;h4 id="학력">학력&lt;/h4>
 &lt;ul>
@@ -571,12 +573,12 @@ alt="Google"
 &lt;li>HTML/CSS&lt;/li>
 &lt;li>JavaScript&lt;/li>
 &lt;/ul>
-&lt;p>미술과 음악을 사랑하며 &amp;ldquo;그 가치가 잘 융화된 Art Work&amp;rdquo;,&lt;br>
-그리고 다양한 인터랙션을 활용한 &amp;ldquo;눈이 즐거운 UI 디자인&amp;quot;을 추구합니다.&lt;br>
+&lt;p>미술과 음악을 사랑하며 &lt;strong>그 가치가 잘 융화된 Art Work&lt;/strong>,&lt;br>
+그리고 다양한 인터랙션을 활용한 &lt;strong>눈이 즐거운 UI 디자인&lt;/strong>을 추구합니다.&lt;br>
 그렇다고 보기에만 좋은 디자인은 하지 않습니다.&lt;br>
-사용자에게 편리함과 재미, 새로움 등 &amp;ldquo;최상의 경험을 줄 수 있는 UX&amp;quot;를 설계합니다.&lt;/p>
-&lt;p>웹 표준과 클린코드를 추구합니다.&lt;/p>
+사용자에게 편리함과 재미, 새로움 등 &lt;strong>최상의 경험을 줄 수 있는 UX&lt;/strong>를 설계합니다.&lt;/p>
+&lt;p>&lt;strong>웹 표준&lt;/strong>과 &lt;strong>클린코드&lt;/strong>를 추구합니다.&lt;/p>
 &lt;p>프론트엔드에서 경쟁력은 사용자를 고려한 설계, 언어 및 프레임워크 이해도, 웹 성능, API 활용 능력 등에서 나온다고 생각합니다.&lt;br>
-&amp;ldquo;제대로 하는 프론트엔드 개발자&amp;quot;가 되기 위해 끊임없이 학습하고 노력하겠습니다.&lt;/p>
+&lt;strong>제대로 하는 프론트엔드 개발자&lt;/strong>가 되기 위해 끊임없이 학습하고 노력하겠습니다.&lt;/p>
 &lt;p>Learn more on &lt;a class="link" href="https://github.com/wontory" target="_blank" rel="noopener"
 >GitHub&lt;/a>.&lt;/p></description></item><item><title>검색</title><link>https://wontory.github.io/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wontory.github.io/search/</guid><description/></item><item><title>링크</title><link>https://wontory.github.io/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wontory.github.io/links/</guid><description/></item></channel></rss>
