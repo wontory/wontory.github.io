@@ -4,12 +4,17 @@
 &lt;p>HTML &lt;code>&amp;lt;h1&amp;gt;&lt;/code>&amp;mdash;&lt;code>&amp;lt;h6&amp;gt;&lt;/code> 요소는 6가지 수준의 섹션 제목을 나타냅니다.&lt;br>
 &lt;code>&amp;lt;h1&amp;gt;&lt;/code>부터 &lt;code>&amp;lt;h6&amp;gt;&lt;/code>까지 순서대로 높은 섹션 수준을 갖습니다.&lt;br>
 마크다운에서는 제목 앞 # 기호의 개수로 섹션 수준을 구분합니다.&lt;/p>
-&lt;h1 id="제목1">제목1&lt;/h1>
-&lt;h2 id="제목2">제목2&lt;/h2>
-&lt;h3 id="제목3">제목3&lt;/h3>
-&lt;h4 id="제목4">제목4&lt;/h4>
-&lt;h5 id="제목5">제목5&lt;/h5>
-&lt;h6 id="제목6">제목6&lt;/h6>
+&lt;h4 id="제목-예시">제목 예시&lt;/h4>
+&lt;p>TOC 문제로 이미지로 대체합니다. (실제 크기와 다를 수 있습니다.)&lt;/p>
+&lt;p>&lt;img src="https://wontory.github.io/p/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AC%B8%EB%B2%95-%EC%A0%95%EB%A6%AC-markdown-syntax/headings_sample.png"
+width="1006"
+height="680"
+srcset="https://wontory.github.io/p/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AC%B8%EB%B2%95-%EC%A0%95%EB%A6%AC-markdown-syntax/headings_sample_hue2809c8df5b874bad804c464a836ba2e_173301_480x0_resize_box_3.png 480w, https://wontory.github.io/p/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AC%B8%EB%B2%95-%EC%A0%95%EB%A6%AC-markdown-syntax/headings_sample_hue2809c8df5b874bad804c464a836ba2e_173301_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="147"
+data-flex-basis="355px"
+>&lt;/p>
 &lt;p>&lt;strong>[ Code ]&lt;/strong>&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -531,7 +536,7 @@ Chroma의 경우, 사용법은 다음과 같습니다.&lt;/p>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p> &lt;/p>
-&lt;h2 id="하이퍼링크-이미지">하이퍼링크 이미지()&lt;/h2>
+&lt;h2 id="하이퍼링크-이미지linking-images">하이퍼링크 이미지(Linking Images)&lt;/h2>
 &lt;p>이미지를 추가할 때는 &lt;code>![이미지 설명](이미지 경로)&lt;/code>와 같이 입력하면 됩니다.&lt;br>
 하이퍼링크 양식인 &lt;code>[주소 설명](주소)&lt;/code> 앞에 ! 기호를 추가한 것과 같습니다.&lt;br>
 이미지 양식을 하이퍼링크 양식 안으로 넣어주면 이미지에 하이퍼링크를 적용할 수 있습니다.&lt;/p>
