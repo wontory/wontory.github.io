@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>css on Wontory</title><link>https://wontory.github.io/tags/css/</link><description>Recent content in css on Wontory</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 01 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://wontory.github.io/tags/css/index.xml" rel="self" type="application/rss+xml"/><item><title>마크다운 문법 정리 (Markdown Syntax)</title><link>https://wontory.github.io/p/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AC%B8%EB%B2%95-%EC%A0%95%EB%A6%AC-markdown-syntax/</link><pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate><guid>https://wontory.github.io/p/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AC%B8%EB%B2%95-%EC%A0%95%EB%A6%AC-markdown-syntax/</guid><description>&lt;img src="https://wontory.github.io/p/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AC%B8%EB%B2%95-%EC%A0%95%EB%A6%AC-markdown-syntax/markdown_banner.png" alt="Featured image of post 마크다운 문법 정리 (Markdown Syntax)" />&lt;p>본 문서는 Hugo 및 Github Pages 포스팅을 위한 마크다운 문법을 서술합니다.&lt;/p>
 &lt;p> &lt;/p>
 &lt;h2 id="제목headings">제목(Headings)&lt;/h2>
-&lt;p>HTML &lt;code>&amp;lt;h1&amp;gt;&lt;/code>&amp;mdash;&lt;code>&amp;lt;h6&amp;gt;&lt;/code> 요소는 6가지 수준의 섹션 제목을 나타냅니다.&lt;br>
-&lt;code>&amp;lt;h1&amp;gt;&lt;/code>부터 &lt;code>&amp;lt;h6&amp;gt;&lt;/code>까지 순서대로 높은 섹션 수준을 갖습니다.&lt;br>
-마크다운에서는 제목 앞 # 기호의 개수로 섹션 수준을 구분합니다.&lt;/p>
+&lt;p>HTML &lt;code>&amp;lt;h1&amp;gt;&lt;/code>&amp;mdash;&lt;code>&amp;lt;h6&amp;gt;&lt;/code> 요소는 6가지 수준의 섹션 제목을 나타냅니다. &lt;code>&amp;lt;h1&amp;gt;&lt;/code>부터 &lt;code>&amp;lt;h6&amp;gt;&lt;/code>까지 순서대로 높은 섹션 수준을 갖습니다. 마크다운에서는 제목 앞 &lt;code>#&lt;/code> 기호의 개수로 섹션 수준을 구분합니다.&lt;/p>
 &lt;h4 id="제목-예시">제목 예시&lt;/h4>
 &lt;p>TOC 문제로 이미지로 대체합니다. (실제 크기와 다를 수 있습니다.)&lt;/p>
 &lt;p>&lt;img src="https://wontory.github.io/p/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AC%B8%EB%B2%95-%EC%A0%95%EB%A6%AC-markdown-syntax/headings_sample.png"
@@ -36,7 +34,7 @@ data-flex-basis="355px"
 &lt;/div>
 &lt;/div>&lt;p> &lt;/p>
 &lt;h2 id="문단paragraphs">문단(Paragraphs)&lt;/h2>
-&lt;p>문단을 구분할 때는 두 문단 사이에 빈 줄을 추가합니다.&lt;/p>
+&lt;p>문단을 구분할 때는 두 문단 사이에 &lt;strong>빈 줄&lt;/strong>을 추가합니다.&lt;/p>
 &lt;h4 id="문단-예시">문단 예시&lt;/h4>
 &lt;p>계절이 지나가는 하늘에는 가을로 가득 차 있습니다.&lt;br>
 나는 아무 걱정도 없이 가을 속의 별들을 다 헤일 듯합니다.&lt;br>
@@ -73,7 +71,7 @@ data-flex-basis="355px"
 &lt;/div>
 &lt;/div>&lt;p> &lt;/p>
 &lt;h2 id="줄-바꿈line-breaks">줄 바꿈(Line Breaks)&lt;/h2>
-&lt;p>줄 바꿈을 하기 위해서는 문장 끝에 2개 이상 공백(스페이스 바)을 넣고, 다음 줄에 내용을 입력하면 됩니다.&lt;/p>
+&lt;p>문장 끝에 스페이스 바로 &lt;strong>2개 이상 공백&lt;/strong>을 넣어 줄 바꿈을 할 수 있습니다.&lt;/p>
 &lt;h4 id="줄-바꿈-예시">줄 바꿈 예시&lt;/h4>
 &lt;p>&amp;ldquo;그만 거둘까?&amp;rdquo;&lt;br>
 &amp;ldquo;잘 생각했네.봉평장에서 한번이나 흐뭇하게 사본 일 있을까.내일 대화장에서나 한몫 벌어야겠네.&amp;rdquo;&lt;br>
@@ -96,7 +94,7 @@ data-flex-basis="355px"
 &lt;/div>
 &lt;/div>&lt;p> &lt;/p>
 &lt;h2 id="구분선horizontal-rules">구분선(Horizontal Rules)&lt;/h2>
-&lt;p>&lt;code>*&lt;/code> 기호, &lt;code>-&lt;/code> 기호, &lt;code>_&lt;/code> 기호를 3개 이상 작성하여 구분선을 표시할 수 있습니다.&lt;/p>
+&lt;p>&lt;code>*&lt;/code> 기호, &lt;code>-&lt;/code> 기호, &lt;code>_&lt;/code> 기호를 &lt;strong>3개 이상&lt;/strong> 작성하여 구분선을 표시할 수 있습니다.&lt;/p>
 &lt;h4 id="구분선-예시">구분선 예시&lt;/h4>
 &lt;hr>
 &lt;hr>
@@ -120,8 +118,7 @@ data-flex-basis="355px"
 &lt;/div>
 &lt;/div>&lt;p> &lt;/p>
 &lt;h2 id="인용문blockquotes">인용문(Blockquotes)&lt;/h2>
-&lt;p>&lt;code>&amp;lt;blockquote&amp;gt;&lt;/code> 요소는 안쪽의 텍스트가 긴 인용문임을 나타내며, 일반적으로 들여쓰기가 적용됩니다.&lt;br>
-&lt;code>&amp;lt;footer&amp;gt;&lt;/code>나 &lt;code>&amp;lt;cite&amp;gt;&lt;/code> 요소를 인용문에 선택적으로 적용할 수 있고, 주석이나 약어를 포함할 수 있습니다.&lt;/p>
+&lt;p>&lt;code>&amp;lt;blockquote&amp;gt;&lt;/code> 요소는 안쪽의 텍스트가 긴 인용문임을 나타내며, 일반적으로 들여쓰기가 적용됩니다. &lt;code>&amp;lt;footer&amp;gt;&lt;/code>나 &lt;code>&amp;lt;cite&amp;gt;&lt;/code> 요소를 인용문에 선택적으로 적용할 수 있고, &lt;strong>주석&lt;/strong>이나 &lt;strong>약어&lt;/strong>를 포함할 수 있습니다.&lt;/p>
 &lt;h4 id="인용문-예시">인용문 예시&lt;/h4>
 &lt;blockquote>
 &lt;p>&lt;strong>단순함&lt;/strong>은 &lt;em>복잡함&lt;/em>보다 더 어렵다.&lt;br>
@@ -150,10 +147,7 @@ data-flex-basis="355px"
 &lt;/div>
 &lt;/div>&lt;p> &lt;/p>
 &lt;h2 id="표tables">표(Tables)&lt;/h2>
-&lt;p>표는 마크다운에서 제공하는 핵심 기능은 아니지만, Hugo에서 지원합니다.&lt;br>
-인용문과 마찬가지로, 표 내에서 마크다운 문법을 사용할 수 있습니다.&lt;br>
-&lt;code>|&lt;/code> 기호로 행을 구분하고 &lt;code>-&lt;/code> 기호로 열을 구분합니다.&lt;br>
-이 때, &lt;code>-&lt;/code> 기호는 3개 이상 사용해야 합니다.&lt;/p>
+&lt;p>표는 마크다운에서 확장 기능으로 제공하고 있습니다. 인용문과 마찬가지로, 표 내에서 마크다운 문법을 사용할 수 있습니다. &lt;code>|&lt;/code> 기호로 행을 구분하고 &lt;code>-&lt;/code> 기호로 열을 구분합니다. 이 때, &lt;code>-&lt;/code> 기호는 &lt;strong>3개 이상&lt;/strong> 사용해야 합니다.&lt;/p>
 &lt;h4 id="표-예시">표 예시&lt;/h4>
 &lt;table>
 &lt;thead>
@@ -228,13 +222,9 @@ data-flex-basis="355px"
 &lt;/div>
 &lt;/div>&lt;p> &lt;/p>
 &lt;h2 id="코드-블럭code-blocks">코드 블럭(Code Blocks)&lt;/h2>
-&lt;p>일반적으로 코드는 ` 기호 1개로 묶어 사용하지만,&lt;br>
-여러 줄의 코드를 블로그에 삽입할 때는 코드 블럭을 사용합니다.&lt;br>
-코드블럭은 Syntax Highlight를 지원하여 코드를 더 보기 쉽게 정리할 수 있습니다.&lt;/p>
+&lt;p>일반적으로 코드는 &lt;strong>` 기호 1개&lt;/strong>로 묶어 사용하지만, 여러 줄의 코드를 블로그에 삽입할 때는 코드 블럭을 사용합니다. 코드 블럭은 &lt;strong>Syntax Highlight&lt;/strong>를 지원하여 코드를 더 보기 쉽게 정리할 수 있습니다.&lt;/p>
 &lt;h4 id="-기호backtick를-사용한-코드-블럭-예시">` 기호(Backtick)를 사용한 코드 블럭 예시&lt;/h4>
-&lt;p>코드를 ` 기호 3개로 감싸고 언어를 지정해주면 코드 블럭이 활성화됩니다.&lt;br>
-언어를 지정하지 않아도 코드 블럭을 사용할 수 있지만,&lt;br>
-Syntax Highlight는 사용할 수 없습니다.&lt;/p>
+&lt;p>코드를 &lt;strong>` 기호 3개&lt;/strong>로 감싸고 &lt;strong>언어를 지정&lt;/strong>해주면 코드 블럭이 활성화됩니다. 언어를 지정하지 않아도 코드 블럭을 사용할 수 있지만, Syntax Highlight는 사용할 수 없습니다.&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -293,8 +283,7 @@ Syntax Highlight는 사용할 수 없습니다.&lt;/p>
 &lt;/div>
 &lt;/div>
 &lt;h4 id="들여쓰기를-이용한-코드-블럭-예시">들여쓰기를 이용한 코드 블럭 예시&lt;/h4>
-&lt;p>4칸 이상 들여쓰기를 하여 코드 블럭을 적용할 수 있습니다.&lt;br>
-강조와 줄 번호가 표시되지 않는 특징이 있습니다.&lt;/p>
+&lt;p>&lt;strong>4칸 이상 들여쓰기&lt;/strong>를 하여 코드 블럭을 적용할 수 있습니다. 강조와 줄 번호가 표시되지 않는 특징이 있습니다.&lt;/p>
 &lt;pre>&lt;code>&amp;lt;!doctype html&amp;gt;
 &amp;lt;html lang=&amp;quot;ko&amp;quot;&amp;gt;
 &amp;lt;head&amp;gt;
@@ -334,8 +323,7 @@ Syntax Highlight는 사용할 수 없습니다.&lt;/p>
 &lt;/div>
 &lt;/div>
 &lt;h4 id="chroma-syntax-highlighter를-이용한-코드-블럭-예시">Chroma Syntax Highlighter를 이용한 코드 블럭 예시&lt;/h4>
-&lt;p>다음은 외부 Syntax Highlighter를 블로그에 적용했을 경우에만 해당합니다.&lt;br>
-Chroma의 경우, 사용법은 다음과 같습니다.&lt;/p>
+&lt;p>다음은 외부 Syntax Highlighter를 블로그에 적용했을 경우에만 해당합니다. Chroma의 경우, 사용법은 다음과 같습니다.&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -394,7 +382,7 @@ Chroma의 경우, 사용법은 다음과 같습니다.&lt;/p>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;h4 id="diff-코드-블럭-예시">Diff 코드 블럭 예시&lt;/h4>
-&lt;p>마크다운은 Diff를 지원하여 코드의 변경사항을 표기할 수 있습니다.&lt;/p>
+&lt;p>마크다운은 Diff를 지원하여 &lt;strong>코드의 변경사항&lt;/strong>을 표기할 수 있습니다.&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -499,6 +487,7 @@ Chroma의 경우, 사용법은 다음과 같습니다.&lt;/p>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;h4 id="중첩-목록-예시">중첩 목록 예시&lt;/h4>
+&lt;p>들여쓰기를 통해 목록을 중첩 사용할 수 있습니다.&lt;/p>
 &lt;ul>
 &lt;li>과일
 &lt;ul>
@@ -537,9 +526,7 @@ Chroma의 경우, 사용법은 다음과 같습니다.&lt;/p>
 &lt;/div>
 &lt;/div>&lt;p> &lt;/p>
 &lt;h2 id="하이퍼링크-이미지linking-images">하이퍼링크 이미지(Linking Images)&lt;/h2>
-&lt;p>이미지를 추가할 때는 &lt;code>![이미지 설명](이미지 경로)&lt;/code>와 같이 입력하면 됩니다.&lt;br>
-하이퍼링크 양식인 &lt;code>[주소 설명](주소)&lt;/code> 앞에 ! 기호를 추가한 것과 같습니다.&lt;br>
-이미지 양식을 하이퍼링크 양식 안으로 넣어주면 이미지에 하이퍼링크를 적용할 수 있습니다.&lt;/p>
+&lt;p>이미지를 추가할 때는 &lt;code>![이미지 설명](이미지 경로)&lt;/code>와 같이 입력하면 됩니다. 하이퍼링크 양식인 &lt;code>[주소 설명](주소)&lt;/code> 앞에 ! 기호를 추가한 것과 같습니다. 이미지 양식을 하이퍼링크 양식 안으로 넣어주면 이미지에 하이퍼링크를 적용할 수 있습니다.&lt;/p>
 &lt;p>&lt;a class="link" href="https://google.com" target="_blank" rel="noopener"
 >&lt;img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
 loading="lazy"
