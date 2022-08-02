@@ -11,7 +11,10 @@ tags = [
 categories = [
     "language",
 ]
-series = ["Themes Guide"]
+slug = "markdown-syntax"
+series = [
+  "Themes Guide"
+]
 image = "markdown_banner.png"
 +++
 
