@@ -5,13 +5,11 @@ date = "2022-08-01"
 description = "마크다운, 서식이 있는 문서를 작성하는 쉽고 편리한 언어"
 tags = [
     "markdown",
-    "css",
-    "html",
+    "syntax", 
     "themes",
 ]
 categories = [
-    "language", 
-    "syntax",
+    "language",
 ]
 series = ["Themes Guide"]
 image = "markdown_banner.png"
@@ -390,7 +388,11 @@ int main()
 
 이미지를 추가할 때는 `![이미지 설명](이미지 경로)`와 같이 입력하면 됩니다. 하이퍼링크 양식인 `[주소 설명](주소)` 앞에 ! 기호를 추가한 것과 같습니다. 이미지 양식을 하이퍼링크 양식 안으로 넣어주면 이미지에 하이퍼링크를 적용할 수 있습니다.
 
+#### 하이퍼링크 이미지 예시
+
 [![Google](https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png)](https://google.com)
+
+**\[ Code \]**
 
 ```markdown
 [![Google](https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png)](https://google.com)
